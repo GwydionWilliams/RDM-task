@@ -12,7 +12,7 @@ timeline.push(welcome);
 // INSTRUCTIONS ---------------------------------------------------------------
 var instructions = {
   type: "html-keyboard-response",
-  stimulus: "<p>In this experiment, you will see many dots."
+  stimulus: "INSTRUCTIONS"
 };
 timeline.push(instructions);
 
