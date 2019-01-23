@@ -72,7 +72,9 @@ var FoC_slider = {
     stimulus: " ",
     min: FoC_limits[0],
     max: FoC_limits[1],
-    start: function(){Math.floor(Math.random() * FoC_limits[1])},
+    start: function() {
+        return Math.floor(Math.random() * FoC_limits[1])
+    },
     trial_duration: 3000
 }
 
