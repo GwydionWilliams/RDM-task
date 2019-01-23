@@ -12,7 +12,7 @@ timeline.push(welcome);
 // INSTRUCTIONS ---------------------------------------------------------------
 var instructions = {
   type: "html-keyboard-response",
-  stimulus: "INSTRUCTIONS"
+  stimulus: "INSTRUCTIONS (press any key to continue)"
 };
 timeline.push(instructions);
 
@@ -23,6 +23,7 @@ function sampleFixationTime(){
     t = Math.random() * 200 + 800
     return t
 };
+
 var fixation = {
   type: 'html-keyboard-response',
   stimulus: '<div style="font-size:60px;">+</div>',
@@ -46,6 +47,7 @@ var RDK_stim = {
     type: "RDK",
     dot_color_pre: "black",
     dot_color_post: jsPsych.timelineVariable("dot_color_post"),
+    background_color: "white",
     trial_duration: 2000,
     t_color_transition: jsPsych.timelineVariable("t_color_transition"),
     aperture_type: 1,
