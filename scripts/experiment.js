@@ -52,7 +52,7 @@ var RDK_stim = {
     t_color_transition: jsPsych.timelineVariable("t_color_transition"),
     aperture_type: 1,
     coherent_direction: jsPsych.timelineVariable("coherent_direction"),
-    coherence: .1,
+    coherence: .05,
     choices: Object.values(responseSettings),
     on_finish: function(data){
         data.instruction = (_.invert(instructionSettings))[data.dot_color_post];
